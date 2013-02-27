@@ -56,8 +56,8 @@
               <li><a href="story.html">故事</a></li>
               <li><a href="character.html">角色</a></li>
               <li><a href="screenshot.html">畫面</a></li>
+               <li><a href="music.html">音樂</a></li>
               <li><a href="download.html">下載</a></li>
-              <li><a href="material.html">素材</a></li>
               <li><a href="staff.html">作者</a></li>
               <li><a href="credit.html">鳴謝</a></li>
               <li><a href="freetalk.html">雜談</a></li>
@@ -77,14 +77,15 @@
         picName[3]="huei";
         picName[4]="han";
         picName[5]="zo";
+        picName[6]="lead";
         nowObj.className='hidden_div';
         
-        if (nowObj!= null && (nowObj.id == 'frame_lead') || (nowObj.id == 'frame_other')){
+        if (nowObj!= null && nowObj.id == 'frame_other'){
             nowObj.className='text_div, disappear_div';
 
         }
 
-        if (clickId<6){ 
+        if (clickId<7){ 
             
             if (nowObj.id=='picframe1'){
                 nowObj = document.getElementById("picframe2");
@@ -93,13 +94,10 @@
             }
             nowObj.src = "/img/intro/introduction_"+ picName[clickId] +".jpg";
             nowObj.className='visible_div';
-       }else if (clickId ==6){
-            nowObj = document.getElementById("frame_lead");
-            nowObj.className='visible_div text_div';
-
        }else{
             nowObj = document.getElementById("frame_other");
             nowObj.className='visible_div text_div';
+
        }
        
        return false;
@@ -113,6 +111,7 @@
 <img src="/img/intro/introduction_huei.jpg" />
 <img src="/img/intro/introduction_han.jpg" />
 <img src="/img/intro/introduction_zo.jpg" />
+<img src="/img/intro/introduction_lead.jpg" />
 </div>
 
 <div id="bigimage">
