@@ -67,219 +67,82 @@
 
           <div id="body_container">
             <div class="post">
-              <p>遊戲試玩版製作＆感謝名單<i>（點擊網站名稱可另開網頁）</i>：</p>
+              <script type="text/javascript">
+if (typeof jQuery != 'undefined') {
+  jQuery(document).ready(function($) {
+    var filetypes = /\.(7z|zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+ 
+    jQuery('a').on('click', function(event) {
+      var el = jQuery(this);
+      var track = true;
+      var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') :"";
+      var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+      if (!href.match(/^javascript:/i)) {
+        var elEv = []; elEv.value=0, elEv.non_i=false;
+        if (href.match(/^mailto\:/i)) {
+          elEv.category = "email";
+          elEv.action = "click";
+          elEv.label = href.replace(/^mailto\:/i, '');
+          elEv.loc = href;
+        }
+        else if (href.match(filetypes)) {
+          var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+          elEv.category = "download";
+          elEv.action = "click-" + extension[0];
+          elEv.label = href.replace(/ /g,"-");
+          elEv.loc = baseHref + href;
+        }
+        else if (href.match(/^https?\:/i) && !isThisDomain) {
+          elEv.category = "external";
+          elEv.action = "click";
+          elEv.label = href.replace(/^https?\:\/\//i, '');
+          elEv.non_i = true;
+          elEv.loc = href;
+        }
+        else if (href.match(/^tel\:/i)) {
+          elEv.category = "telephone";
+          elEv.action = "click";
+          elEv.label = href.replace(/^tel\:/i, '');
+          elEv.loc = href;
+        }
+        else track = false;
+ 
+        if (track) {
+          _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+          if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = elEv.loc; }, 400);
+            return false;
+      }
+    }
+      }
+    });
+  });
+}
+</script>
 
-<p><br /></p>
-
-<h2>企劃、編劇、程式</h2>
-
-<p>trilvie(小望)</p>
-
-<p>本遊戲使用<a href="http://www.nvlmaker.net/" target="_blank">THE NVL Maker</a>製作</p>
-
-<p><br /></p>
-
-<h2>原畫</h2>
-
-<p>SFF(小魚)</p>
-
-<p><br /></p>
-
-<h2>音樂</h2>
+<h2>試玩版(TEST)</h2>
 
 <ul>
-<li><p>主題</p>
+<li><p>繁體中文版</p>
 
-<p>作曲：Erato(央央)</p>
+<p><a href="http://lemon.yllan.org/dl/DongZhou_demo_tra.7z" target="_blank">主要載點</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_tra.7z" target="_blank">備用載點</a></p></li>
+<li><p>简体中文版</p>
 
-<p>編曲：小咪、Erato(央央)</p></li>
-<li><p>配樂</p>
-
-<p>《軒轅劍》系列配樂</p>
-
-<p>作曲：吳欣叡、曾志豪、蘇竑嶂</p>
-
-<p>大宇資訊股份有限公司</p>
-
-<p>（<em>經作者同意使用，特此致謝。<a href="http://dongzhoulemon.github.io/img/approval.jpg" target="_blank">許可截圖</a></em>）</p></li>
-</ul>
-
-<p><br /> </p>
-
-<h2>音效</h2>
-
-<p><a href="http://koukaongen.com/" target="_blank">効果音源</a></p>
-
-<p><a href="http://minpoke.dee.cc/" target="_blank">民譚/ポケットエポック</a></p>
-
-<p><a href="http://taira-komori.jpn.org/" target="_blank">小森平の使い方</a></p>
-
-<p><a href="http://www6.flash8.net/sound.shtml" target="_blank">閃吧</a></p>
-
-<p><a href="http://salaya58.sakura.ne.jp/" target="_blank">Feeling Melody</a></p>
-
-<p><br /></p>
-
-<h2>介面</h2>
-
-<ul>
-<li><p>模板</p>
-
-<p>車前草</p></li>
-<li><p>詢問窗</p>
-
-<p>QR</p></li>
-<li><p>遮片</p>
-
-<p><a href="http://4you.bz/" target="_blank">For You</a></p></li>
-<li><p>加工、按鈕、圖標</p>
-
-<p>SFF(小魚)</p>
-
-<p>trilvie(小望)</p></li>
+<p><a href="http://pan.baidu.com/share/link?shareid=451425&uk=3943623992" target="_blank">主要载点</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_sim.7z" target="_blank">备用载点</a></p></li>
 </ul>
 
 <p><br /></p>
 
-<h2>背景</h2>
+<h2>操作方法</h2>
 
 <ul>
-<li><p>來源</p>
-
-<p>trilvie(小望)攝影作品</p>
-
-<p><a href="http://www.sda.nagoya-cu.ac.jp/sa08m13/image.html" target="_blank">日本の伝統文様の画像コレクション１００枚</a></p>
-
-<p><a href="http://ruta2.fc2web.com/frame.html" target="_blank">RUTA </a></p>
-
-<p><a href="http://areae.xxxxxxxx.jp/" target="_blank">AreaE </a></p>
-
-<p><a href="http://mgear.tkwave.com/" target="_blank">月の歯車</a></p>
-
-<p><a href="http://www.ashinari.com/" target="_blank">写真素材 足成</a></p>
-
-<p><a href="http://www.stellarium.org/" target="_blank">stellarium</a></p></li>
-<li><p>加工</p>
-
-<p>SFF(小魚)</p>
-
-<p>trilvie(小望)</p></li>
+<li><p>滑鼠左鍵／Enter、Space鍵：選取</p></li>
+<li><p>滑鼠右鍵／Esc：回上一層、隱藏話框</p></li>
+<li><p>滑鼠滾輪向上：前文回顧</p></li>
+<li><p>滑鼠滾輪向下：繼續劇情</p></li>
 </ul>
-
-<p><br /></p>
-
-<h2>紋理素材</h2>
-
-<p><a href="http://miracle-page.jp/" target="_blank">Miracle Page</a></p>
-
-<p><a href="http://tomqvaxy.deviantart.com/" target="_blank">Chinese Clouds by tomqvaxy</a></p>
-
-<p><a href="http://webtreats.mysitemyway.com/" target="_blank">WebTreats Etc.</a></p>
-
-<p><a href="http://lostandtaken.com/" target="_blank">Lost &amp; Taken</a></p>
-
-<p><a href="http://sore.hontonano.jp/index.php" target="_blank">DotsDomino</a></p>
-
-<p><br /></p>
-
-<h2>標題書法</h2>
-
-<ul>
-<li><p>東周列萌志</p>
-
-<p>沈尹默書</p>
-
-<p>取自<a href="http://163.20.160.14/~word" target="_blank">陳忠建書法教學資料庫</a></p></li>
-<li><p>節氣小標</p>
-
-<p>黃庭堅、宋高宗、趙孟頫、董其昌書</p>
-
-<p>取自<a href="http://www.cns11643.gov.tw/AIDB/welcome.do" target="_blank">全字庫</a></p>
-
-<p>王羲之書</p>
-
-<p>取自<a href="http://163.20.160.14/~word" target="_blank">陳忠建書法教學資料庫</a></p></li>
-</ul>
-
-<p><br /></p>
-
-<h2>官網架設與技術支援</h2>
-
-<p>SFF(小魚)</p>
-
-<p>yllan</p>
-
-<p><br /></p>
-
-<h2>程式支援</h2>
-
-<p>gjy_管</p>
-
-<p>VariableD</p>
-
-<p>Tio⊙Plato</p>
-
-<p>wzhydd1</p>
-
-<p><br /></p>
-
-<h2>測試</h2>
-
-<p>frobo</p>
-
-<p>akindo</p>
-
-<p>yanjune</p>
-
-<p>anita3027</p>
-
-<p>crasRES</p>
-
-<p>peiswu</p>
-
-<p><br /></p>
-
-<h2>特別感謝</h2>
-
-<p>《軒轅劍》系列角色扮演遊戲</p>
-
-<p>《Starry☆Sky》系列戀愛冒險遊戲</p>
-
-<p>《蝶の毒　華の鎖》戀愛冒險遊戲</p>
-
-<p>《王者天下》動畫</p>
-
-<p><a href="http://tieba.baidu.com/f?tp=0&kw=%BC%AA%C0%EF%BC%AA%C0%EF" target="_blank">百度吉里吉里吧</a></p>
-
-<p><a href="http://tieba.baidu.com/f?tp=0&kw=the_nvl_maker" target="_blank">百度 the_nvl_maker 吧</a></p>
-
-<p><a href="http://kokotodo.nobody.jp/" target="_blank">ここから 遠い どこか</a>素材索引網站</p>
-
-<p>VariableD</p>
-
-<p>gjy_管</p>
-
-<p>車前草</p>
-
-<p>黑星</p>
-
-<p>風城之心</p>
-
-<p>randyvai</p>
-
-<p>yllan</p>
-
-<p>frobo</p>
-
-<p>budist</p>
-
-<p>akindo</p>
-
-<p>johnsonli</p>
-
-<p>sharpy</p>
-
-<p>n2i2n2a</p>
 
             </div>
 
