@@ -71,7 +71,82 @@
 
           <div id="body_container">
             <div class="post">
-              <h2>試玩版下載即將開放</h2>
+              <script type="text/javascript">
+if (typeof jQuery != 'undefined') {
+  jQuery(document).ready(function($) {
+    var filetypes = /\.(7z|zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+ 
+    jQuery('a').on('click', function(event) {
+      var el = jQuery(this);
+      var track = true;
+      var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') :"";
+      var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+      if (!href.match(/^javascript:/i)) {
+        var elEv = []; elEv.value=0, elEv.non_i=false;
+        if (href.match(/^mailto\:/i)) {
+          elEv.category = "email";
+          elEv.action = "click";
+          elEv.label = href.replace(/^mailto\:/i, '');
+          elEv.loc = href;
+        }
+        else if (href.match(filetypes)) {
+          var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+          elEv.category = "download";
+          elEv.action = "click-" + extension[0];
+          elEv.label = href.replace(/ /g,"-");
+          elEv.loc = baseHref + href;
+        }
+        else if (href.match(/^https?\:/i) && !isThisDomain) {
+          elEv.category = "external";
+          elEv.action = "click";
+          elEv.label = href.replace(/^https?\:\/\//i, '');
+          elEv.non_i = true;
+          elEv.loc = href;
+        }
+        else if (href.match(/^tel\:/i)) {
+          elEv.category = "telephone";
+          elEv.action = "click";
+          elEv.label = href.replace(/^tel\:/i, '');
+          elEv.loc = href;
+        }
+        else track = false;
+ 
+        if (track) {
+          _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+          if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = elEv.loc; }, 400);
+            return false;
+      }
+    }
+      }
+    });
+  });
+}
+</script>
+
+<h2>試玩版</h2>
+
+<ul>
+<li><p>繁體中文版</p>
+
+<p><a href="http://lemon.yllan.org/dl/DongZhou_demo_tra.7z" target="_blank">主要載點</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_tra.7z" target="_blank">備用載點</a></p></li>
+<li><p>简体中文版</p>
+
+<p><a href="http://pan.baidu.com/share/link?shareid=451425&uk=3943623992" target="_blank">主要载点</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_sim.7z" target="_blank">备用载点</a></p></li>
+</ul>
+
+<p><br /></p>
+
+<h2>操作方法</h2>
+
+<ul>
+<li><p>滑鼠左鍵／Enter、Space鍵：選取</p></li>
+<li><p>滑鼠右鍵／Esc：回上一層、隱藏話框</p></li>
+<li><p>滑鼠滾輪向上：前文回顧</p></li>
+<li><p>滑鼠滾輪向下：繼續劇情</p></li>
+</ul>
 
             </div>
 
