@@ -71,81 +71,58 @@
 
           <div id="body_container">
             <div class="post">
-              <script type="text/javascript">
-if (typeof jQuery != 'undefined') {
-  jQuery(document).ready(function($) {
-    var filetypes = /\.(7z|zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
-    var baseHref = '';
-    if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
- 
-    jQuery('a').on('click', function(event) {
-      var el = jQuery(this);
-      var track = true;
-      var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') :"";
-      var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
-      if (!href.match(/^javascript:/i)) {
-        var elEv = []; elEv.value=0, elEv.non_i=false;
-        if (href.match(/^mailto\:/i)) {
-          elEv.category = "email";
-          elEv.action = "click";
-          elEv.label = href.replace(/^mailto\:/i, '');
-          elEv.loc = href;
-        }
-        else if (href.match(filetypes)) {
-          var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
-          elEv.category = "download";
-          elEv.action = "click-" + extension[0];
-          elEv.label = href.replace(/ /g,"-");
-          elEv.loc = baseHref + href;
-        }
-        else if (href.match(/^https?\:/i) && !isThisDomain) {
-          elEv.category = "external";
-          elEv.action = "click";
-          elEv.label = href.replace(/^https?\:\/\//i, '');
-          elEv.non_i = true;
-          elEv.loc = href;
-        }
-        else if (href.match(/^tel\:/i)) {
-          elEv.category = "telephone";
-          elEv.action = "click";
-          elEv.label = href.replace(/^tel\:/i, '');
-          elEv.loc = href;
-        }
-        else track = false;
- 
-        if (track) {
-          _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
-          if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
-            setTimeout(function() { location.href = elEv.loc; }, 400);
-            return false;
-      }
-    }
-      }
-    });
-  });
-}
-</script>
-
-<h2>試玩版(TEST)</h2>
+              <h2>主題</h2>
 
 <ul>
-<li><p>繁體中文版</p>
+<li><p>青衫磊落</p>
 
-<p><a href="http://lemon.yllan.org/dl/DongZhou_demo_tra.7z" target="_blank">主要載點</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_tra.7z" target="_blank">備用載點</a></p></li>
-<li><p>简体中文版</p>
+<p>作曲：Erato(央央)</p>
 
-<p><a href="http://pan.baidu.com/share/link?shareid=451425&uk=3943623992" target="_blank">主要载点</a>　<a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/DongZhou_demo_sim.7z" target="_blank">备用载点</a></p></li>
+<p>編曲：小咪</p></li>
 </ul>
+
+<p><audio controls>
+ <source src="/music/Dongzhou_theme_piano.mp3" type="audio/mp3">
+ <embed src="http://dl.dropbox.com/u/78858765/DongZhou/music/Dongzhou_theme_piano.mp3" width="300" height="20" loop="true" autostart="false" EnableContextMenu="false"></embed>
+</audio></p>
+
+<ul>
+<li><p>溯洄千年(音樂盒版)</p>
+
+<p>作曲：Erato(央央)</p>
+
+<p>編曲：Erato(央央)</p></li>
+</ul>
+
+<p><audio controls>
+ <source src="/music/Dongzhou_interlude_musicbox.mp3" type="audio/mp3">
+  <embed src="http://dl.dropbox.com/u/78858765/DongZhou/music/Dongzhou_interlude_musicbox.mp3" width="300" height="20" loop="false" autostart="false" EnableContextMenu="false"></embed>
+</audio></p>
+
+<ul>
+<li><p>溯洄千年(編鐘版)</p>
+
+<p>作曲：Erato(央央)</p>
+
+<p>編曲：小咪</p></li>
+</ul>
+
+<p><audio controls>
+ <source src="/music/Dongzhou_interlude_chimebells.mp3" type="audio/mp3">
+  <embed src="http://dl.dropbox.com/u/78858765/DongZhou/music/Dongzhou_interlude_chimebells.mp3" width="300" height="20" loop="false" autostart="false" EnableContextMenu="false"></embed>
+</audio></p>
 
 <p><br /></p>
 
-<h2>操作方法</h2>
+<h2>配樂</h2>
 
 <ul>
-<li><p>滑鼠左鍵／Enter、Space鍵：選取</p></li>
-<li><p>滑鼠右鍵／Esc：回上一層、隱藏話框</p></li>
-<li><p>滑鼠滾輪向上：前文回顧</p></li>
-<li><p>滑鼠滾輪向下：繼續劇情</p></li>
+<li><p>本遊戲使用《軒轅劍》系列配樂，經作者同意使用，特此致謝（<a href="http://dongzhoulemon.github.io/img/approval.jpg" target="_blank"><i>許可截圖</i></a>）。</p>
+
+<p>配樂版權屬大宇資訊股份有限公司及作者所有，</p>
+
+<p>喜愛配樂者，可 <a href="https://dl.dropboxusercontent.com/u/78858765/DongZhou/file/%E6%9D%B1%E5%91%A8%E5%88%97%E8%90%8C%E5%BF%97%E4%BD%BF%E7%94%A8%E4%B9%8B%E8%BB%92%E8%BD%85%E5%8A%8D%E9%85%8D%E6%A8%82%E4%B8%80%E8%A6%BD%EF%BC%88%E8%A9%A6%E7%8E%A9%E7%89%88%EF%BC%89.pdf" target="_blank"><i>下載</i></a> 此配樂一覽文檔，依清單入手相應的軒轅劍遊戲。</p></li>
+<li><p>作曲：吳欣叡、曾志豪、蘇竑嶂</p></li>
 </ul>
 
             </div>
