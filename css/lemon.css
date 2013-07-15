@@ -379,3 +379,43 @@ img.sticker {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 30px; }
+
+/* FOR MUSIC */
+/* line 368, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+.musicbox {
+  display: block;
+  width: 100%;
+  height: 50px; }
+
+/* line 374, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+.musicbox_element {
+  display: float;
+  float: left;
+  margin-right: 10px; }
+
+/* line 380, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+.music_download_button {
+  display: block;
+  width: 40px;
+  background-color: #3d3d3d;
+  height: 25px;
+  border: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #eee;
+  text-align: center;
+  padding-top: 5px; }
+
+/* line 392, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+a.button_link {
+  text-decoration: none;
+  color: #eee; }
+
+/* line 396, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+a:hover.button_link {
+  text-decoration: none;
+  color: #eee;
+  background-color: transparent; }
