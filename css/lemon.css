@@ -454,7 +454,7 @@ a:hover.button_link {
   padding: 0px; }
 
 /* line 434, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
-#index_box #right .right_box {
+#index_box #right #histats, #index_box #right .right_box {
   padding-left: 10px;
   margin-top: 0px; }
 
@@ -463,3 +463,8 @@ a:hover.button_link {
   padding-left: 15px;
   border: 0px;
   border-left: 5px solid #9e9576; }
+
+/* line 444, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+#histats h2 {
+  padding-left: 0px;
+  border-left: 0px solid #9e9576; }
