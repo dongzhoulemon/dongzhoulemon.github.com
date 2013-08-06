@@ -465,6 +465,7 @@ a:hover.button_link {
   border-left: 5px solid #9e9576; }
 
 /* line 444, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
-#histats h2 {
+#histats {
+  padding-top: 50px;
   padding-left: 0px;
-  border-left: 0px solid #9e9576; }
+  margin-bottom: 0px; }
