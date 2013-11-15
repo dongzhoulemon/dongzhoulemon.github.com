@@ -477,3 +477,10 @@ a:hover.button_link {
   padding-top: 50px;
   padding-left: 0px;
   margin-bottom: 0px; }
+
+/* line 460, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+#claim {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px; }
