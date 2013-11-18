@@ -1,37 +1,19 @@
-/* ===== for Title ===== */
-/*
-$img_title:"title3.png";
-$bg_size: 95%;
-$dx_title: -55px;
-$dy_title: 0px;
-$head_overlap: 30px;
-*/
-/* ===== for Background img ===== */
-/*
-$bg_body: url(../img/pat/gold_red.jpg);
-$bg_body: url(../img/pat/pattern_b2.jpg);
-*/
-/* ===== for edges of content ===== */
-/*
-$color_border: #666633;
-$shadow_color: rgb(102, 51, 51);
-*/
-/* ===== for menu ===== */
-/* ===== for character.html.md ====== */
-/* line 65, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 22, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 html {
   height: 100%; }
 
-/* line 69, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 26, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 body {
   display: block;
   padding: 0;
   margin: 0;
   padding-top: 0px;
   height: 100%;
-  background: url(../img/background.jpg) repeat; }
+  /*background: url(../img/background.jpg) repeat;*/
+  /*background: url(../img/pat/pattern_b2.jpg) repeat;*/
+  background: url(../img/pat/gold_red.jpg) repeat; }
 
-/* line 78, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 38, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #content {
   position: relative;
   display: block;
@@ -39,30 +21,32 @@ body {
   height: auto !important;
   min-height: 100%;
   height: 100%;
-  border: 1px #eeeeee solid;
+  /*border:1px #EEE solid; */
+  /*border:1px #666633 solid;*/
   border-top: 0px;
-  -webkit-box-shadow: #2e3b0b 0 0 50px;
-  -moz-box-shadow: #2e3b0b 0 0 50px;
-  box-shadow: #2e3b0b 0 0 50px;
+  /*@include box-shadow(rgb(46, 59, 11) 0 0 50px);*/
+  -webkit-box-shadow: #663333 0 0 50px;
+  -moz-box-shadow: #663333 0 0 50px;
+  box-shadow: #663333 0 0 50px;
   background: #e6e6e0 url(/img/block.png) repeat;
   background-color: #eee;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
+  padding-top: 0px;
   color: #5c5c3d;
   font-size: 14px; }
-  /* line 98, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 60, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #content h1 {
     margin-top: 0px; }
 
-/* line 104, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 66, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 .preload {
   position: absolute;
   left: -9999px;
   dislay: none; }
 
-/* line 110, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 72, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #character_menu {
   position: relative;
   width: 850px;
@@ -78,7 +62,7 @@ body {
   border: 0;
   overflow: hidden;
   *zoom: 1; }
-  /* line 129, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 91, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #character_menu li {
     list-style-image: none;
     list-style-type: none;
@@ -97,7 +81,7 @@ body {
     /* line 50, /usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     #character_menu li.last {
       padding-right: 0; }
-    /* line 132, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 94, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li a {
       display: inline-block;
       height: 100%;
@@ -114,37 +98,37 @@ body {
       -o-border-radius: 3px;
       border-radius: 3px;
       text-shadow: 0px 0px 10px #999900; }
-    /* line 145, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 107, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li a:hover {
       color: gray;
       background: #ffff33;
       text-shadow: 0px 0px 10px white; }
-    /* line 150, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 112, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #kong {
       background: url(/img/button/0.png) no-repeat; }
-    /* line 153, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 115, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #mo {
       background: url(/img/button/1.png) no-repeat; }
-    /* line 156, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 118, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #chung {
       background: url(/img/button/2.png) no-repeat; }
-    /* line 159, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 121, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #huei {
       background: url(/img/button/3.png) no-repeat; }
-    /* line 162, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 124, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #han {
       background: url(/img/button/4.png) no-repeat; }
-    /* line 165, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 127, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #zo {
       background: url(/img/button/5_x.png) no-repeat; }
-    /* line 168, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 130, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #other {
       background: url(/img/button/6.png) no-repeat; }
-    /* line 171, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 133, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #character_menu li #lead {
       background: url(/img/button/6.png) no-repeat; }
 
-/* line 177, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 139, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #bigimage {
   background-color: #000;
   color: #bcb5a0;
@@ -160,10 +144,10 @@ body {
   margin-left: -51px;
   margin-bottom: 0px;
   padding-left: 25px; }
-  /* line 195, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 157, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage h2 {
     color: #bcb5a0; }
-  /* line 198, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 160, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage .visible_div {
     visibility: visible;
     opacity: 1;
@@ -176,15 +160,15 @@ body {
     -moz-transition-duration: 1.5s;
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s; }
-  /* line 205, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 167, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage .invisible {
     /*no transition. For initial use.*/
     opacity: 0; }
-  /* line 210, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 172, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage .disappear_div {
     opacity: 0;
     visibility: hidden; }
-  /* line 214, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 176, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage .hidden_div {
     opacity: 0;
     visibility: hidden;
@@ -196,24 +180,24 @@ body {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s; }
-  /* line 222, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 184, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage .text_div {
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px; }
-  /* line 228, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 190, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #bigimage #picframe1, #bigimage #picframe2, #bigimage #frame_lead, #bigimage #frame_other {
     position: absolute;
     margin-top: 0px; }
 
-/* line 234, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 196, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 .post {
   display: block;
   font-size: 14px;
   color: #5c5c3d;
   padding: 0px;
   padding-top: 20px; }
-  /* line 242, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 204, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post .postimage {
     position: relative;
     width: 100%;
@@ -222,17 +206,17 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px; }
-  /* line 250, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 212, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post ul {
     margin-left: -20px;
     list-style-type: circle; }
-  /* line 255, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 217, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post li {
     min-height: 30px;
     margin: 0px;
     margin-bottom: 5px;
     position: relative; }
-  /* line 263, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 225, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post h2 {
     line-height: 23px;
     color: #5c5c3d;
@@ -240,44 +224,44 @@ body {
     margin-top: 30px;
     padding-left: 15px;
     border-left: 4px solid #F8F8F8; }
-  /* line 272, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 234, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post a {
     color: #65661b;
     text-decoration: underline; }
-  /* line 277, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 239, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   .post a:hover {
     color: #3d3e10;
     background-color: rgba(204, 204, 0, 0.2); }
 
-/* line 284, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 253, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #header {
-  height: 168px; }
+  height: 181px; }
 
 /* Hack for menu */
-/* line 289, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 258, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #header::after {
   display: block;
   position: relative;
   z-index: 0;
-  top: -11px;
+  top: -41px;
   background: #f4f4f4 url(/img/wall4.png);
-  height: 25px;
+  height: 30px;
   content: " ";
   -webkit-box-shadow: #888888 0 0 6px;
   -moz-box-shadow: #888888 0 0 6px;
   box-shadow: #888888 0 0 6px; }
 
-/* line 301, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 270, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #banner {
   position: relative;
   margin: 0px;
   margin-left: 0px;
   margin-top: 10px;
   z-index: 1; }
-  /* line 309, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 278, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #banner div:child {
     opacity: 1; }
-  /* line 313, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  /* line 282, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #banner a {
     display: -moz-inline-stack;
     display: inline-block;
@@ -285,19 +269,19 @@ body {
     *vertical-align: auto;
     zoom: 1;
     *display: inline;
-    width: 755px;
-    height: 168px;
+    width: 867px;
+    height: 211px;
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url("/img/title2.png");
+    background-image: url(/img/title3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 100% 100%;
+    background-size: 95% 95%;
     padding: 0px;
-    margin-left: 15px; }
+    margin-left: -55px; }
 
-/* line 325, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 293, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #slogan {
   position: absolute;
   top: 0;
@@ -315,7 +299,7 @@ body {
   opacity: 0.7;
   z-index: 100; }
 
-/* line 341, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 309, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #slogan_r {
   float: left;
   position: relative;
@@ -323,12 +307,12 @@ body {
   /*margin-left: 0 - image-width("slogan_row.png") * $ratio / 2;*/
   width: 80%; }
 
-/* line 351, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 319, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #menu {
   position: relative;
   top: -11px;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 30px;
   display: block;
   z-index: 5;
   margin: 0;
@@ -336,8 +320,8 @@ body {
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  margin-left: 90px; }
-  /* line 363, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+  margin-left: 74px; }
+  /* line 332, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
   #menu li {
     list-style-image: none;
     list-style-type: none;
@@ -345,8 +329,8 @@ body {
     white-space: nowrap;
     display: inline;
     float: left;
-    padding-left: -1px;
-    padding-right: -1px; }
+    padding-left: 4px;
+    padding-right: 4px; }
     /* line 48, /usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     #menu li:first-child, #menu li.first {
       padding-left: 0; }
@@ -356,27 +340,27 @@ body {
     /* line 50, /usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     #menu li.last {
       padding-right: 0; }
-    /* line 366, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 335, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #menu li a {
       display: inline-block;
       height: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
       color: #65661b;
       font-size: 14px;
       text-decoration: none; }
-    /* line 377, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+    /* line 346, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
     #menu li a:hover {
       color: black;
       background: rgba(178, 179, 0, 0.2); }
 
-/* line 385, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 354, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #footer {
   display: block;
   width: 100%;
   padding-top: 100px; }
 
-/* line 391, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 360, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #histats {
   display: block;
   padding-top: 10px;
@@ -386,7 +370,7 @@ body {
   text-align: center;
   bottom: 0px;*/ }
 
-/* line 401, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 370, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #credit {
   display: block;
   width: 100%;
@@ -395,7 +379,7 @@ body {
   bottom: 20px;
   padding-top: 20px; }
 
-/* line 410, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 379, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #copyright {
   display: block;
   width: 100%;
@@ -403,16 +387,16 @@ body {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-/* line 419, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 388, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 img.sticker {
   height: 33px;
   padding-top: 8px; }
 
-/* line 424, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 393, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #disqus_thread {
   margin-top: 50px; }
 
-/* line 428, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 397, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #body_container {
   position: relative;
   margin-top: -11px;
@@ -421,19 +405,19 @@ img.sticker {
   padding-bottom: 20px; }
 
 /* FOR MUSIC */
-/* line 439, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 408, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 .musicbox {
   display: block;
   width: 100%;
   height: 50px; }
 
-/* line 445, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 414, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 .musicbox_element {
   display: float;
   float: left;
   margin-right: 10px; }
 
-/* line 451, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 420, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 .music_download_button {
   display: block;
   width: 40px;
@@ -449,19 +433,19 @@ img.sticker {
   text-align: center;
   padding-top: 5px; }
 
-/* line 463, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 432, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 a.button_link {
   text-decoration: none;
   color: #eee; }
 
-/* line 467, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 436, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 a:hover.button_link {
   text-decoration: none;
   color: #eee;
   background-color: transparent; }
 
 /* FOR INDEX */
-/* line 474, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 443, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box {
   display: block;
   width: 100%;
@@ -471,7 +455,7 @@ a:hover.button_link {
   padding-top: 0px;
   /*border-top: 1px dashed #9e9576;*/ }
 
-/* line 484, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 453, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #left {
   display: float;
   float: left;
@@ -480,7 +464,7 @@ a:hover.button_link {
   margin-right: 0px;
   /*border-right: 1px dashed #9e9576;*/ }
 
-/* line 493, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 462, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #right {
   display: float;
   float: right;
@@ -491,41 +475,41 @@ a:hover.button_link {
   overflow: hidden;
   border-left: 1px dashed #9e9576; }
 
-/* line 506, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 475, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #right .right_obj {
   padding: 0px; }
 
-/* line 509, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 478, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #right #histats, #index_box #right .right_box {
   margin-top: 0px; }
 
-/* line 512, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 481, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #right .right_box h2 {
   padding-left: 15px;
   border: 0px;
   border-left: 5px solid #9e9576; }
 
-/* line 518, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 487, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #right .right_box:first-child h2:first-child {
   margin-top: 0px; }
 
-/* line 521, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 490, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #left h2:first-child {
   margin-top: 0px; }
 
-/* line 526, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 495, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #histats {
   padding-top: 50px;
   padding-left: 0px;
   margin-bottom: 0px; }
 
-/* line 533, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 502, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #claim {
   display: block;
   text-align: center;
   width: 100%;
   padding-bottom: 50px; }
 
-/* line 540, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss */
+/* line 509, /Users/sffish/Desktop/Lemon/source/css/lemon.css.scss.inprogress */
 #index_box #left #intro {
   margin-top: -14px; }
